@@ -47,13 +47,15 @@
         bottom: 53px;
         right: 0;
         margin-left: auto;
-        max-width: 160px;
+        max-width: 240px;
         p{
             font-size: 16px;
             line-height: 20px;
             color: $gray;
+            text-align: right;
         }
         input{ 
+            text-align: right;
             border: none;
             background-color: transparent;
             outline: none;
@@ -66,3 +68,9 @@
 }
 
 
+@media (max-width: 500px) {
+    .order{
+        padding: 0 15px;
+    }
+    .order-total{right: 15px;}
+}

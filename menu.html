@@ -31,16 +31,16 @@
                 <div class="menu-top">
                     <p class="china-font">Основные блюда</p>
                     <div>
-                        <button class="slider-leftarrow" type="button"> <img src="./icons/left-icon.svg"
+                        <button class="slider-leftarrow slider1-leftarrow" type="button"> <img src="./icons/left-icon.svg"
                                 alt=""></button>
-                        <button class="slider-rightarrow" type="button"><img src="./icons/left-icon.svg"
+                        <button class="slider-rightarrow slider1-rightarrow" type="button"><img src="./icons/left-icon.svg"
                                 alt=""></button>
                     </div>
                 </div>
 
                 <div class="test">
                     <div class="back"></div>
-                    <div class="owl-carousel menu-slider">
+                    <div class="owl-carousel menu-slider slider1">
                         <div class="menu-cardholder">
                             <div class="light"></div>
                             <div class="menu-card">
@@ -223,16 +223,16 @@
                 <div class="menu-top">
                     <p class="china-font">Суши</p>
                     <div>
-                        <button class="slider-leftarrow" type="button"> <img src="./icons/left-icon.svg"
+                        <button class="slider-leftarrow slider2-leftarrow" type="button"> <img src="./icons/left-icon.svg"
                                 alt=""></button>
-                        <button class="slider-rightarrow" type="button"><img src="./icons/left-icon.svg"
+                        <button class="slider-rightarrow slider2-rightarrow" type="button"><img src="./icons/left-icon.svg"
                                 alt=""></button>
                     </div>
                 </div>
 
                 <div class="test">
                     <div class="back"></div>
-                    <div class="owl-carousel menu-slider">
+                    <div class="owl-carousel menu-slider slider2">
                         <div class="menu-cardholder">
                             <div class="light"></div>
                             <div class="menu-card">
@@ -415,16 +415,16 @@
                     <div class="menu-top">
                         <p class="china-font">Напитки</p>
                         <div>
-                            <button class="slider-leftarrow" type="button"> <img src="./icons/left-icon.svg"
+                            <button class="slider-leftarrow slider3-leftarrow" type="button"> <img src="./icons/left-icon.svg"
                                     alt=""></button>
-                            <button class="slider-rightarrow" type="button"><img src="./icons/left-icon.svg"
+                            <button class="slider-rightarrow slider3-rightarrow" type="button"><img src="./icons/left-icon.svg"
                                     alt=""></button>
                         </div>
                     </div>
 
                     <div class="test">
                         <div class="back"></div>
-                        <div class="owl-carousel menu-slider">
+                        <div class="owl-carousel menu-slider slider3">
                             <div class="menu-cardholder">
                                 <div class="light"></div>
                                 <div class="menu-card">
@@ -642,7 +642,11 @@
                 </div>
                 <div class="order-total">
                     <div>
-                        <p>Итоговая стоимось</p>
+                        <p>Обслуживание</p>
+                        <input type="text" value="490 Т" disabled>
+                    </div>
+                    <div>
+                        <p>Итоговая стоимость заказа</p>
                         <input type="text" value="12 900 Т" disabled>
                     </div>
 
@@ -696,13 +700,33 @@
     <script src="./jquery/jquery.js"></script>
 
     <script>
-         $(".slider-rightarrow").click(function () {
-            $(".owl-carousel").trigger('next.owl.carousel');
+
+       
+         $(".slider1-rightarrow").click(function () {
+            $(".slider1").trigger('next.owl.carousel');
             console.log("right")
             });
 
-            $(".slider-leftarrow").click(function () {
-                $(".owl-carousel").trigger('prev.owl.carousel');
+            $(".slider1-leftarrow").click(function () {
+                $(".slider1").trigger('prev.owl.carousel');
+                console.log("left")
+            });
+         $(".slider2-rightarrow").click(function () {
+            $(".slider2").trigger('next.owl.carousel');
+            console.log("right")
+            });
+
+            $(".slider2-leftarrow").click(function () {
+                $(".slider2").trigger('prev.owl.carousel');
+                console.log("left")
+            });
+         $(".slider3-rightarrow").click(function () {
+            $(".slider3").trigger('next.owl.carousel');
+            console.log("right")
+            });
+
+            $(".slider3-leftarrow").click(function () {
+                $(".slider3").trigger('prev.owl.carousel');
                 console.log("left")
             });
         $(document).ready(function () {
