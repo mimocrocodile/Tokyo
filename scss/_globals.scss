@@ -8,7 +8,7 @@
     font-weight: 400;
     color: #FFFFFF;
 }
-html, body{height: 100%;}
+html, body{height: 100%; background-color: $bg-color;}
 .main{
     background-color: $bg-color;
     height: 100%;
@@ -56,14 +56,17 @@ html, body{height: 100%;}
     position: absolute;
     top: 0;
     bottom: 0;
-    background-color: #18191b93;
+
+
     z-index: 3;
 }
 .back{
     left: 0;
+    background: linear-gradient(90deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
 }
 .back2{
     right: 0px;
+    background: linear-gradient(270deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
 }
 
 @media (min-width: 1900px) {
@@ -71,3 +74,14 @@ html, body{height: 100%;}
         // right: 17px;
     }
 }
+
+input{
+    &:hover{
+        border-color: $yellow-light;
+    }
+    &:active{
+        background-color: $accept;
+        border-color: $yellow-light;
+    }
+}
+

@@ -9,6 +9,7 @@
 
 html, body {
   height: 100%;
+  background-color: #18191B;
 }
 
 .main {
@@ -60,16 +61,25 @@ html, body {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(24, 25, 27, 0.5764705882);
   z-index: 3;
 }
 
 .back {
   left: 0;
+  background: linear-gradient(90deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
 }
 
 .back2 {
   right: 0px;
+  background: linear-gradient(270deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
+}
+
+input:hover {
+  border-color: #C08621;
+}
+input:active {
+  background-color: #212326;
+  border-color: #C08621;
 }
 
 .header {
@@ -84,6 +94,10 @@ html, body {
   max-width: 86px;
   width: 100%;
   margin: 0;
+}
+.header-link img {
+  min-width: 32px;
+  max-width: 48px;
 }
 .header-icons {
   display: flex;
@@ -142,7 +156,8 @@ html, body {
   line-height: 33.6px;
 }
 .menu-top > div {
-  display: none;
+  display: flex;
+  gap: 8px;
 }
 .menu-top button {
   background-color: #906314;
@@ -155,6 +170,12 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.menu-top button:hover {
+  background-color: #C08621;
+  box-shadow: 0px 0px 16px 0px rgba(255, 179, 46, 0.5019607843);
 }
 .menu-top button:last-child {
   rotate: 180deg;
@@ -200,6 +221,9 @@ html, body {
   min-height: 51px;
 }
 .menu-info p.china-font:first-child {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   line-height: 29.3px;
   min-height: 58px;
@@ -218,6 +242,7 @@ html, body {
   box-shadow: 0px 0px 16px 0px #858585;
 }
 .menu-btns button {
+  transition: all ease-in-out 0.5s;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -265,39 +290,45 @@ html, body {
   right: 0;
 }
 
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: -92px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.owl-carousel .owl-nav .owl-prev:hover,
-.owl-carousel .owl-nav .owl-next:hover {
-  background-color: #C08621;
-  box-shadow: 0px 0px 16px 0px rgba(255, 179, 46, 0.5019607843);
-}
-.owl-carousel .owl-nav .owl-prev span,
-.owl-carousel .owl-nav .owl-next span {
-  display: none;
-}
-
 .owl-carousel .owl-nav .owl-prev {
   right: 40px;
-  background: #906314 url("./icons/left-icon.png") center no-repeat !important;
+  background: #906314 url("/icons/left-icon.png") center no-repeat !important;
 }
 
 .owl-carousel .owl-nav .owl-next {
   right: 0px;
   rotate: 180deg;
-  background: #906314 url("./icons/left-icon.png") center no-repeat !important;
+  background: #906314 url("/icons/left-icon.png") center no-repeat !important;
   rotate: 180deg;
+}
+
+.owl-stage {
+  padding: 20px 0;
+}
+
+.light {
+  background-color: #FFB32E;
+  filter: blur(5px);
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 380px;
+  bottom: -3px;
+  border-radius: 24px;
+  transition: all ease-in-out 0.5s;
+}
+
+.menu-cardholder:hover .light {
+  top: -3px;
+  bottom: -3px;
+}
+
+.menu-cardholder:hover .menu-card {
+  border-color: #906314;
+}
+
+.menu-card {
+  transition: all ease-in-out 0.5s;
 }
 
 @media (min-width: 1024px) {
@@ -328,7 +359,7 @@ html, body {
     text-align: end;
   }
   .menu-slider {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .owl-nav {
     position: absolute;
@@ -341,10 +372,16 @@ html, body {
 @media (max-width: 500px) {
   .menu {
     height: 80%;
-    padding: 30px 15px;
+    padding: 30px 0px;
   }
   .menu-slider {
     margin-top: 10px;
+  }
+  .menu-top {
+    padding: 0 15px;
+  }
+  .menu-top > div {
+    display: none;
   }
   .menu-item:not(:first-child) {
     margin-top: 60px;
@@ -353,8 +390,11 @@ html, body {
     height: 100%;
     display: none;
   }
+  .menu-slider {
+    max-height: 460px;
+  }
   .owl-stage {
-    padding-left: 0px !important;
+    padding-left: 15px;
   }
 }
 .menu-cardholder {
@@ -395,6 +435,12 @@ html, body {
 .order-item p {
   background-color: #18191B;
 }
+.order-item p:first-child {
+  padding-right: 8px;
+}
+.order-item p:nth-child(2) {
+  padding-left: 8px;
+}
 .order-item:not(:first-child) {
   margin-top: 10px;
 }
@@ -426,6 +472,7 @@ html, body {
 
 .accept-btn {
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 .accept-btn:hover {
@@ -651,6 +698,14 @@ html, body {
   background-color: transparent;
   font-size: 18px;
   line-height: 22px;
+  outline: none;
+}
+.delivery-form input:hover, .delivery-form textarea:hover {
+  border-color: #C08621;
+}
+.delivery-form input:focus, .delivery-form textarea:focus {
+  background-color: #212326;
+  border-color: #C08621;
 }
 .delivery-form textarea {
   height: 120px;

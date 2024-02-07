@@ -2,6 +2,7 @@
 .accept{display: none;}
 .accept-btn{
     text-decoration: none;
+    transition: all .5s ease-in-out;
     cursor: pointer;
     &:hover{
         background-color: $yellow-light;

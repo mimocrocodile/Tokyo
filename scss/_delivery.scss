@@ -25,6 +25,14 @@
             background-color: transparent;
             font-size: 18px;
             line-height: 22px;
+            outline: none;
+            &:hover{
+                border-color: $yellow-light;
+            }
+            &:focus{
+                background-color: $accept;
+                border-color: $yellow-light;
+            }
         }
         textarea{
             height: 120px;
