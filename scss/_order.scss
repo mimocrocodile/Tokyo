@@ -71,10 +71,13 @@
 @media (max-width: 500px) {
     .order{
         padding: 0 15px;
-        padding-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 80px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 20px;
+        overflow: scroll;
     }
     .order-total{right: 15px;}
 }
