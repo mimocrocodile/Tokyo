@@ -396,6 +396,9 @@ input:active {
   .owl-stage-outer {
     max-height: 460px;
   }
+  .menu-container, .order, .delivery {
+    padding-bottom: 140px;
+  }
 }
 .menu-cardholder {
   max-width: 300px;
@@ -445,7 +448,6 @@ input:active {
   margin-top: 10px;
 }
 .order-total {
-  position: absolute;
   bottom: 53px;
   right: 0;
   margin-left: auto;
@@ -471,6 +473,10 @@ input:active {
 @media (max-width: 500px) {
   .order {
     padding: 0 15px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .order-total {
     right: 15px;
@@ -726,6 +732,7 @@ input:active {
 @media (max-width: 500px) {
   .delivery {
     padding: 0 15px;
+    padding-bottom: 140px;
   }
 }
 .base {

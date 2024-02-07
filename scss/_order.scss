@@ -43,7 +43,7 @@
     }
 
     &-total{
-        position: absolute;
+        // position: absolute;
         bottom: 53px;
         right: 0;
         margin-left: auto;
@@ -71,6 +71,10 @@
 @media (max-width: 500px) {
     .order{
         padding: 0 15px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .order-total{right: 15px;}
 }

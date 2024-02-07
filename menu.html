@@ -606,40 +606,43 @@
         </div>
         <div class="info-container">
             <div class="order">
-                <p class="order-title china-font">Ваш заказ</p>
-                <div class="order-info">
-                    <div>
-                        <p class="order-subtitle china-font">Основные блюда</p>
-                        <div class="order-item">
-                            <p>Beef Ramen</p>
-                            <p>2 290 T</p>
+                <div>
+                    <p class="order-title china-font">Ваш заказ</p>
+                    <div class="order-info">
+                        <div>
+                            <p class="order-subtitle china-font">Основные блюда</p>
+                            <div class="order-item">
+                                <p>Beef Ramen</p>
+                                <p>2 290 T</p>
+                            </div>
+                            <div class="order-item">
+                                <p>Beef Ramen</p>
+                                <p>2 290 T</p>
+                            </div>
                         </div>
-                        <div class="order-item">
-                            <p>Beef Ramen</p>
-                            <p>2 290 T</p>
+                        <div>
+                            <p class="order-subtitle china-font">Суши</p>
+                            <div class="order-item">
+                                <p>Запеченная с лососем </p>
+                                <p>2 290 T</p>
+                            </div>
+                            <div class="order-item">
+                                <p>Филадельфия BAKED</p>
+                                <p>2 290 T</p>
+                            </div>
                         </div>
+                        <div>
+                            <p class="order-subtitle china-font">Напитки</p>
+                            <div class="order-item">
+                                <p>Vanilla Shake</p>
+                                <p>2 290 T</p>
+                            </div>
+    
+                        </div>
+    
                     </div>
-                    <div>
-                        <p class="order-subtitle china-font">Суши</p>
-                        <div class="order-item">
-                            <p>Запеченная с лососем </p>
-                            <p>2 290 T</p>
-                        </div>
-                        <div class="order-item">
-                            <p>Филадельфия BAKED</p>
-                            <p>2 290 T</p>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="order-subtitle china-font">Напитки</p>
-                        <div class="order-item">
-                            <p>Vanilla Shake</p>
-                            <p>2 290 T</p>
-                        </div>
-
-                    </div>
-
                 </div>
+              
                 <div class="order-total">
                     <div>
                         <p>Обслуживание</p>
@@ -657,7 +660,7 @@
                 <form action="" class="delivery-form">
                     <div>
                         <label for="">Ваше имя</label>
-                        <input type="text" placeholder="Иван">
+                        <input type="text" placeholder="Имя">
                     </div>
                     <div>
                         <label for="">Телефон</label>
@@ -665,7 +668,7 @@
                     </div>
                     <div>
                         <label for="">Адрес</label>
-                        <input type="text" placeholder="пр. Рыскулова 36 156">
+                        <input type="text" placeholder="Адрес">
                     </div>
                     <div>
                         <label for="">Комментарий к заказу</label>
@@ -817,7 +820,7 @@
                 }))
                 acceptOk.addEventListener("click", () => {
                     menuContainer.style.display = 'none'
-                    order.style.display = 'block'
+                    order.style.display = 'flex'
                     acceptFirst.style.display = "none"
                     acceptSecond.style.display = "flex"
                     infoContainer.style.display = "block"
@@ -836,7 +839,7 @@
                     delivery.style.display = "block"
                 })
                 acceptTback.addEventListener("click", () => {
-                    order.style.display = "block"
+                    order.style.display = "flex"
                     acceptSecond.style.display = "flex"
                     acceptThird.style.display = "none"
                     delivery.style.display = "none"
