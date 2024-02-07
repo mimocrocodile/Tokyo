@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main base">
+        <form class="container">
+            <div class="base-info">
+                <img class="logo" src="./imgs/logo.png" alt="">
+                <p class="china-font">Добро<br> пожаловать</p>
+                <p>Пожалуйста, выберите Ваш столик</p>
+                <div class="tables">
+                    <button class="tables-picked" type="button"><p>Выбрать</p> <img src="./icons/updown-icon.png" alt=""></button>
+                    <div class="tables-hidden">
+                        <button class="tables-item" type="button">Основной зал. Столик №1</button>
+                        <button class="tables-item" type="button">Основной зал. Столик №2</button>
+                        <button class="tables-item" type="button">Основной зал. Столик №3</button>
+                        <button class="tables-item" type="button">Веранда. Столик №1</button>
+                        <button class="tables-item" type="button">Веранда. Столик №2</button>
+                        <button class="tables-item" type="button">Веранда. Столик №3</button>
+                    </div>
+                </div>
+                <a href="index.html" class="with-myself">Мне с собой</a>
+
+            </div>
+          
+        </form>
+        <div class="accept">
+            <a href="index.html" class="accept-btn" >Подтвердить</a>
+        </div>
+    </div>
+    <script>
+        const tablePicker = document.querySelector(".tables-picked")
+        const tablePickerText = document.querySelector(".tables-picked p")
+        const tableHidden = document.querySelector(".tables-hidden")
+        const tableItems = document.querySelectorAll(".tables-item")
+        const base = document.querySelector(".base")
+        const accept = document.querySelector(".accept")
+        tablePicker.addEventListener("click", ()=>{
+            tableHidden.style.display = "grid"
+            tablePicker.classList.add("active-pick")
+        })
+        tableItems.forEach(el => el.addEventListener("click", ()=>{
+            tablePickerText.innerText = el.innerText
+            tableHidden.style.display = "none"
+            tablePicker.classList.remove("active-pick")
+            accept.style.display = "flex"
+        }))
+        // base.addEventListener("click", ()=>{
+        //     tableHidden.style.display = "none"
+        //     tablePicker.classList.remove("active-pick")
+        // })
+    </script>
+</body>
+</html>

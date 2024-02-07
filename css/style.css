@@ -206,6 +206,9 @@ input:active {
   display: grid;
   gap: 15px;
 }
+.menu-info span {
+  font-size: 15px;
+}
 .menu-info p {
   font-size: 14px;
   line-height: 17px;
