@@ -739,6 +739,7 @@
             const order = document.querySelector(".order")
             const delivery = document.querySelector(".delivery")
             const menuContainer = document.querySelector(".menu-container")
+            const infoContainer = document.querySelector(".info-container")
 
             const acceptFirst = document.querySelector(".accept-first")
             const acceptSecond = document.querySelector(".accept-second")
@@ -786,12 +787,14 @@
                     order.style.display = 'block'
                     acceptFirst.style.display = "none"
                     acceptSecond.style.display = "flex"
+                    infoContainer.style.display = "block"
                 })
                 acceptBack.addEventListener("click", () => {
                     order.style.display = "none"
                     menuContainer.style.display = 'block'
                     acceptSecond.style.display = "none"
                     acceptFirst.style.display = "grid"
+                    infoContainer.style.display = "none"
                 })
                 acceptNext.addEventListener("click", () => {
                     order.style.display = "none"

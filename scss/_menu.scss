@@ -167,8 +167,8 @@
     display: none;
   }
 }
-.owl-carousel .owl-nav .owl-prev{ right: 40px; background: $yellow url("/icons/left-icon.png") center no-repeat !important ;}
-.owl-carousel .owl-nav .owl-next {  right: 0px; rotate: (180deg); background: $yellow url("/icons/left-icon.png") center no-repeat !important; rotate: (180deg);}
+.owl-carousel .owl-nav .owl-prev{ right: 40px; background: $yellow url("./icons/left-icon.png") center no-repeat !important ;}
+.owl-carousel .owl-nav .owl-next {  right: 0px; rotate: (180deg); background: $yellow url("./icons/left-icon.png") center no-repeat !important; rotate: (180deg);}
 
 @media (min-width: 1024px){
     .menu-item:not(:first-child){
@@ -222,6 +222,7 @@
     }
     .info-container{
         height: 100%;
+        display: none;
     }
     .owl-stage{padding-left:0px !important;}
    
