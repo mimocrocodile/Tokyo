@@ -734,10 +734,9 @@
             });
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
-                loop: true,
+
                 // autoWidth: true,
                 margin: 30,
-                slideTransition: 'linear',
                 responsive: {
                     300: {
                         smartSpeed: 0,
@@ -745,6 +744,7 @@
                         autoWidth: true,
                     },
                     1024: {
+                        loop: true,
                         smartSpeed: 250,
                         nav: false,
                     },
