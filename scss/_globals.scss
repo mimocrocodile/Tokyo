@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+html, body{height: 100%;}
+.main{
+    background-color: $bg-color;
+    height: 100%;
+}
+@font-face {
+    font-family: 'ChinaStyle';
+    src: url(../fonts/rusmadeinchina.ttf);
+}
+.china-font{
+    font-family: "ChinaStyle", sans-serif;
+}
+.last{ 
+ 
+    p{text-align: center;}
+    p:not(.china-font){
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .last{
+        padding-top: 122px;
+        margin: 0 auto;
+        max-width: 700px;
+        display: grid;
+        justify-content: center;
+        object{
+            margin: 0 auto;
+            max-width: 345px;
+            margin-bottom: 30px;
+        }
+      
+    }
+}
+@media (max-width: 500px) {
+    .last{
+        padding: 30px 15px 0;
+    }
+}
+
+.test{position: relative;}
+
+.back, .back2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #18191b93;
+    z-index: 3;
+}
+.back{
+    left: 0;
+}
+.back2{
+    right: 0px;
+}
+
+@media (min-width: 1900px) {
+    .back2{
+        // right: 17px;
+    }
+}

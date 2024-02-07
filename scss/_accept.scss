@@ -1,0 +1,203 @@
+
+.accept{display: none;}
+.accept-btn{
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $yellow-light;
+        box-shadow: 0px 0px 16px 0px #FFB32E80;
+    }   
+}
+
+.accept-first, .accept-second, .accept-third{
+    display: none;
+}
+.accept-first{
+    justify-content: center;
+    align-items: center;
+    >div{
+        display: flex;
+        gap: 10px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    input{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $yellow;
+        max-width: 80px;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .main.base > .accept{
+        position: absolute;
+        bottom: 111px;
+        width: 100%;
+        max-width: 315px;
+        padding: 0;
+    }
+    .main.base  .accept-btn{
+        max-width: 315px;
+        width: 100%;
+    }
+    .accept{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        padding: 15px 30px;
+        border-top-left-radius: 32px ;
+        border-top-right-radius: 32px ;
+        position: fixed;
+        background-color: $accept;
+        width: 100%;
+        max-width: 560px;
+        bottom: 0;
+        z-index: 3;
+        
+    }
+    .accept-btn{
+        max-width: 190px;
+        width: 100%;
+        border-radius: 123px;
+        text-align: center;
+        padding: 16px;
+        font-size: $font-small;
+        line-height: $line-small;
+        border: none;
+        outline: none;
+        background-color: $yellow;
+    }
+    .accept-first{
+            display: inline-flex;
+            width: 100%;
+            justify-content: left;
+            .accept-btn{
+                margin-left: auto;
+            }
+    }
+    .accept-next{display: none;}
+    .accept-deskver{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin: 30px auto 0;
+        max-width: 1360px;
+        width: 100%;
+        position: static;
+        transform: translateX(0);
+        background-color: transparent;
+        .accept-second{
+            display: flex;
+            gap: 15px;
+            max-width: 265px;
+            width: 100%;
+            .accept-back{
+                border: 1px solid $yellow;
+                background-color: transparent;
+            }
+            button{
+                padding: 16px 32px;
+                &:hover{
+                    background-color: $yellow-light;
+                    box-shadow: 0px 0px 16px 0px #FFB32E80;
+                }
+            }
+        }
+    }
+    .accept-second .accept-btn{
+        max-width: 125px;
+    }
+    .accept-lastlink{
+        width: 125px;
+    }
+    .accept-final{
+        display: flex;
+        position: static;
+        transform: translateX(0);
+        margin: 0 auto;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 30px;
+        .accept-first{
+            max-width: 189px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .accept{
+ 
+        margin-top: auto;
+        padding: 15px 30px;
+        border-top-left-radius: 32px ;
+        border-top-right-radius: 32px ;
+        background-color: $accept;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        
+    }
+    .accept-btn{
+        max-width: 315px;
+        width: 100%;
+        border-radius: 123px;
+        text-align: center;
+        padding: 16px;
+        font-size: $font-small;
+        line-height: $line-small;
+        border: none;
+        outline: none;
+        background-color: $yellow;
+    }
+
+ 
+    .accept-first{
+        justify-content: center;
+        align-items: center;
+        >div{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        input{
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: $yellow;
+            max-width: 80px;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .accept-lastlink{display: none;}
+    .accept-second, .accept-third{
+        gap: 20px;
+    }
+    .accept-back, .accept-tback{
+        background-color: transparent;
+        border: 1px solid $yellow;
+    }
+
+    .accept-final{
+        display: flex;
+        .accept-first{
+            display: flex;
+            width: 100%;
+        }
+    }
+}

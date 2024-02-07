@@ -1,0 +1,138 @@
+.base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    .container >div:first-child{
+        display: grid;
+        place-items: center;
+     
+    }
+    .china-font{
+        text-align: center;
+        font-size: $font-big;
+        line-height: $line-big;
+    }
+    >p:not(.china-font){
+        font-size: $font-small;
+        line-height: $line-small;
+        margin-top: 10px;
+    }
+}
+
+.logo{
+    max-width: 315px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.tables{
+    position: relative;
+    max-width: 315px;
+    width: 100%; 
+    margin-top: 20px;  
+    &-picked{
+        rotate: (0deg);
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;      
+        transition: all ease-in-out .2s;  
+        >p{color: $gray;}
+        &:hover{
+            transition: all ease-in-out .2s;
+            outline-width: 2px ;
+        }
+    }
+ 
+ 
+    &-hidden{
+        display: none;
+        padding: 16px 24px;
+        background-color: $yellow;
+        border-radius: 27px;
+        gap: 16px;
+        position: absolute;
+        top: -254px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    &-item{
+        background-color: transparent;
+        font-size: $font-small;
+        line-height: $line-small;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.with-myself, .tables-picked{
+    border: none;
+    outline: 1px solid $yellow;
+    padding: 16px 23px;
+    font-size: $font-small;
+    line-height: $line-small;
+    color: $gray;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 123px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.with-myself{
+    margin-top: 10px;
+    max-width: 315px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    &:hover{
+        outline-width: 2px ;
+    }
+}
+.active-pick{
+    outline-width: 2px ;
+    transition: all ease-in-out 1s; 
+}
+
+.tables-picked.active-pick img{
+    rotate: (180deg);
+    transition: all ease-in-out .5s; 
+}
+
+@media (min-width: 1024px) {
+    .main.base .accept{
+        background-color: transparent;
+        border-radius: 32px;
+    }
+}
+
+
+@media (max-width: 500px){
+    body{
+        background-color: $bg-color;
+    }
+      
+    .base{
+        display: grid;
+        place-items: center;
+        height: 100%;
+        padding: 60px 0 ; 
+        padding-bottom: 100px;
+        position: relative;
+    }
+    .base-info{
+        >p:not(.china-font){
+            margin-top: 10px
+        }
+    }
+    .container{
+        width: 100%;
+       
+    }
+  
+}
+

@@ -1,0 +1,34 @@
+.delivery{
+    display: none;
+    >p{
+        margin-bottom: 30px;
+    }
+  
+    &-form{
+        display: grid;
+        gap: 15px;
+        div{
+            display: grid;
+        }
+        label{
+            font-size: 14px;
+            line-height: 17px;
+            color: $gray;
+            margin-left: 15px;
+            margin-bottom: 4px;
+        }
+        input, textarea{
+            border: 1px solid $gray;
+            padding: 13px 16px;
+            color: $gray;
+            border-radius: 8px;
+            background-color: transparent;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        textarea{
+            height: 120px;
+            resize: none;
+        }
+    }
+}
