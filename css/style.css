@@ -406,10 +406,6 @@ input:active {
     padding-bottom: 140px;
   }
 }
-.menu-cardholder {
-  max-width: 300px;
-}
-
 .order {
   display: none;
   position: relative;
