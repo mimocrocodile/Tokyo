@@ -8,11 +8,22 @@
     font-weight: 400;
     color: #FFFFFF;
 }
-html, body{height: 100%; background-color: $bg-color;}
+html, body{height: 100%;}
 .main{
     background-color: $bg-color;
     height: 100%;
 }
+.main-back{
+    height: 100%;
+}
+@media (max-width: 500px) {
+    .main-back{
+        padding-bottom: 130px;
+        height: auto;
+    }
+}
+.main-back p:not(.china-font){color: $gray}
+.main-back p.china-font{color: $accept}
 @font-face {
     font-family: 'ChinaStyle';
     src: url(../fonts/rusmadeinchina.ttf);
@@ -50,30 +61,7 @@ html, body{height: 100%; background-color: $bg-color;}
     }
 }
 
-.test{position: relative;}
 
-.back, .back2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-
-
-    z-index: 3;
-}
-.back{
-    left: 0;
-    background: linear-gradient(90deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
-}
-.back2{
-    right: 0px;
-    background: linear-gradient(270deg, #18191B 0%, rgba(24, 25, 27, 0) 100%);
-}
-
-@media (min-width: 1900px) {
-    .back2{
-        // right: 17px;
-    }
-}
 
 input{
     &:hover{

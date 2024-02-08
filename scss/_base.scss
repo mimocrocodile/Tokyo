@@ -9,14 +9,17 @@
         place-items: center;
      
     }
+    &-info p:not(.china-font){color: $gray;}
     .china-font{
         text-align: center;
         font-size: $font-big;
         line-height: $line-big;
+        color: $accept;
     }
     >p:not(.china-font){
         font-size: $font-small;
         line-height: $line-small;
+   
         margin-top: 10px;
     }
 }
@@ -40,7 +43,7 @@
         justify-content: space-between;
         align-items: center;      
         transition: all ease-in-out .2s;  
-        >p{color: $gray;}
+        >p{color: $accept;}
         &:hover{
             transition: all ease-in-out .2s;
             outline-width: 2px ;
@@ -88,7 +91,7 @@
     max-width: 315px;
     width: 100%;
     text-align: center;
-    color: #FFFFFF;
+    color: $accept;
     &:hover{
         outline-width: 2px ;
     }
@@ -109,13 +112,13 @@
         border-radius: 32px;
     }
     .main{height: auto;}
-    .main.base{height: 100%;}
+    .main.base{height: auto;}
 }
 
 
 @media (max-width: 500px){
     body{
-        background-color: $bg-color;
+        // background-color: $bg-color;
     }
       
     .base{
@@ -139,3 +142,6 @@
   
 }
 
+.main.base{
+    background: url("../imgs/background.svg") no-repeat center;
+}

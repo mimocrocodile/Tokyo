@@ -26,11 +26,12 @@
             font-size: 18px;
             line-height: 22px;
             outline: none;
+            background-color: #F5F4FA;
             &:hover{
                 border-color: $yellow-light;
             }
             &:focus{
-                background-color: $accept;
+                background-color: white;
                 border-color: $yellow-light;
             }
         }
