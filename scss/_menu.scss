@@ -182,7 +182,7 @@
 .menu-card{
     transition: all ease-in-out .5s;
 }
-.info-container .order-item p, .info-container .order-total input{
+ .info-container .order-total input{
     color: $accept;
 }
 .info-container .order-item p{
@@ -328,6 +328,7 @@
       top: 12px;
       bottom: 12px;
     }
+    .slider-main{padding-bottom: 60px;}
   }
 
   @media (max-width: 1023px) {
@@ -387,11 +388,28 @@
         }
     }
   }
-
+  .accept-firstprice, .accept-firstprice > span{
+    font-weight: 700;
+    color: $yellow-light;
+    font-size: $font-small;
+    line-height: $line-small;
+  }
+.order-total-subtitle{
+    color: $gray;
+}
 .order-item span{color: $accept}
-.order-total >div >div{
+.order-item p{color: $accept; font-weight: 500;}
+
+.order-total .order-totalprice{
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 10px;
     span{color: $accept; font-size: 20px;}
+    p, span{
+        font-size: 32px;
+        line-height: 39px;
+        color: $accept;
+        font-weight: 700;
+    }
 }
