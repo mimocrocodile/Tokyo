@@ -136,7 +136,9 @@
             outline: none;
             background-color: transparent;
             border: none;
-            color: $accept;
+            // color: $accept;
+            -webkit-text-fill-color: $accept;
+            opacity: 1; 
         }
     }
   
