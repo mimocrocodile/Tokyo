@@ -404,6 +404,10 @@ input:active {
   position: relative;
 }
 
+.slider-main {
+  background: url(../imgs/background.png) center;
+}
+
 @media (min-width: 1024px) {
   .test:not(:first-child) {
     margin-top: 60px;
