@@ -67,6 +67,7 @@
         gap: 15px;
         span{
             font-size: 15px;
+            color: $accept;
         }
         p{
             font-size: 14px;
@@ -228,7 +229,7 @@
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 1023px){
     .menu{
         height: 80%;
         padding: 0;
@@ -265,18 +266,20 @@
     position: relative;
     
 }
-
+.slider-main{
+    background: url(../imgs/background.svg) center ;
+}
 @media (min-width: 1024px) {
     // .test{margin-top: 60px}
     .test:not(:first-child){
         margin-top: 60px;
     }
     .slider-main{
-        background: url(../imgs/background.svg) center ;
+      
         padding-top: 60px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
     .test:not(:first-child){margin-top: 60px;}
     .slider-container{
         padding: 15px 0 120px;
@@ -285,10 +288,8 @@
 
 .back, .back2{
     position: absolute;
-    top: 0;
+    top: 87px;
     bottom: 0;
-
-
     z-index: 3;
 }
 .back{
@@ -328,7 +329,7 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 1023px) {
     .menu-cardholder {
       padding: 15px 0 15px 15px;
       max-width: 315px;
@@ -379,7 +380,7 @@
             max-width: 645px;
             font-size: 18px;
             line-height: 21.6px;
-            @media (max-width: 500px) {
+            @media (max-width: 1023px) {
                 font-size: 14px;
             }
         }

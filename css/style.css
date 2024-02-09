@@ -18,9 +18,10 @@ html, body {
 
 .main-back {
   height: 100%;
+  background-color: #F5F4FA;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .main-back {
     padding-bottom: 130px;
     height: auto;
@@ -51,7 +52,7 @@ html, body {
   margin-top: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 400px) {
   .last {
     padding-top: 122px;
     margin: 0 auto;
@@ -65,7 +66,7 @@ html, body {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .last {
     padding: 30px 15px 0;
   }
@@ -114,7 +115,7 @@ input:active {
   text-align: right;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .header {
     padding: 15px;
   }
@@ -204,6 +205,7 @@ input:active {
 }
 .menu-info span {
   font-size: 15px;
+  color: #272733;
 }
 .menu-info p {
   font-size: 14px;
@@ -363,7 +365,7 @@ input:active {
     height: 32px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .menu {
     height: 80%;
     padding: 0;
@@ -401,16 +403,19 @@ input:active {
   position: relative;
 }
 
+.slider-main {
+  background: url(../imgs/background.svg) center;
+}
+
 @media (min-width: 1024px) {
   .test:not(:first-child) {
     margin-top: 60px;
   }
   .slider-main {
-    background: url(../imgs/background.svg) center;
     padding-top: 60px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .test:not(:first-child) {
     margin-top: 60px;
   }
@@ -420,7 +425,7 @@ input:active {
 }
 .back, .back2 {
   position: absolute;
-  top: 0;
+  top: 87px;
   bottom: 0;
   z-index: 3;
 }
@@ -452,7 +457,7 @@ input:active {
     bottom: 12px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .menu-cardholder {
     padding: 15px 0 15px 15px;
     max-width: 315px;
@@ -497,7 +502,7 @@ input:active {
   font-size: 18px;
   line-height: 21.6px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .menu-top > div:has(p) > p:not(.china-font) {
     font-size: 14px;
   }
@@ -569,7 +574,7 @@ input:active {
   max-width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .order {
     padding: 0 15px;
     padding-top: 30px;
@@ -727,7 +732,7 @@ input:active {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .accept {
     margin-top: auto;
     padding: 15px 30px;
@@ -837,7 +842,7 @@ input:active {
   resize: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .delivery {
     padding: 0 15px;
     padding-top: 30px;
@@ -966,7 +971,7 @@ input:active {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
   .base {
     display: grid;
     place-items: center;

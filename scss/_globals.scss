@@ -15,8 +15,9 @@ html, body{height: 100%;}
 }
 .main-back{
     height: 100%;
+    background-color: #F5F4FA;
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
     .main-back{
         padding-bottom: 130px;
         height: auto;
@@ -40,7 +41,7 @@ html, body{height: 100%;}
     margin-top: 10px;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 400px) {
     .last{
         padding-top: 122px;
         margin: 0 auto;
@@ -55,7 +56,7 @@ html, body{height: 100%;}
       
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 1023px) {
     .last{
         padding: 30px 15px 0;
     }

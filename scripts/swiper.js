@@ -27,20 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
 //     },
 //   });
 
-const swiper1 = new Swiper('.swiper1',{})
-const swiper2 = new Swiper('.swiper2',{})
-const swiper3 = new Swiper('.swiper3',{})
-  document.querySelector(".slider1-rightarrow").addEventListener("click", () => {
-    swiper1.slideNext();
-  })
-  document.querySelector(".slider1-leftarrow").addEventListener("click", () => {
-    swiper1.slidePrev();
-  })
+// const swiper1 = new Swiper('.swiper1',{})
+// const swiper2 = new Swiper('.swiper2',{})
+// const swiper3 = new Swiper('.swiper3',{})
+//   document.querySelector(".slider1-rightarrow").addEventListener("click", () => {
+//     swiper1.slideNext();
+//   })
+//   document.querySelector(".slider1-leftarrow").addEventListener("click", () => {
+//     swiper1.slidePrev();
+//   })
 
     swiperCreator = slider => {
         console.log(slider)
     const newSLider = new Swiper(`#${slider}`, {
-        speed: 400,
+        speed: 200,
         loop: true,
         spaceBetween: 30,
         breakpoints: {
@@ -51,6 +51,12 @@ const swiper3 = new Swiper('.swiper3',{})
             // cssMode: true,
             slidesPerGroup: 1,
             spaceBetween: 18,
+          },
+          500: {
+            slidesPerView: 2
+          },
+          800: {
+            slidesPerView: 3
           },
           1024: {
             slidesPerView: 3,
@@ -65,6 +71,10 @@ const swiper3 = new Swiper('.swiper3',{})
             slidesPerView: 6,
           }
         },
+        navigation:{
+          nextEl: `.${slider}-rightarrow`,
+          prevEl: `.${slider}-leftarrow`
+        }
     })
     return newSLider
   }

@@ -48,7 +48,7 @@ if(window.innerWidth >= 1024){
     })
 }
 
-if(window.innerWidth <= 500){
+if(window.innerWidth <= 1023){
     plusBtns.forEach(el => el.addEventListener("click", () => {
         accept.style.display = "block"
         acceptFirst.style.display = "grid"
