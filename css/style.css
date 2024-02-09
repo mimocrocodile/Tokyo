@@ -390,11 +390,8 @@ input:active {
   .menu-slider {
     max-height: 460px;
   }
-  .owl-stage {
-    padding-left: 15px;
-  }
-  .owl-stage-outer {
-    max-height: 460px;
+  .info-container .order-total input {
+    -webkit-text-fill-color: #272733;
   }
   .menu-container, .order, .delivery {
     padding-bottom: 140px;
@@ -507,6 +504,20 @@ input:active {
   .menu-top > div:has(p) > p:not(.china-font) {
     font-size: 14px;
   }
+}
+
+.order-item span {
+  color: #272733;
+}
+
+.order-total > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order-total > div > div span {
+  color: #272733;
+  font-size: 20px;
 }
 
 .order {
@@ -624,7 +635,7 @@ input:active {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  color: #FE0000;
+  color: white;
   max-width: 80px;
   background-color: transparent;
   border: none;
@@ -777,7 +788,7 @@ input:active {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    color: #FE0000;
+    color: white;
     max-width: 80px;
     background-color: transparent;
     border: none;

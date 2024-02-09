@@ -254,8 +254,9 @@
         max-height: 460px;
     }
    
-    .owl-stage{padding-left:15px;}
-    .owl-stage-outer{max-height: 460px;}
+    .info-container .order-total input{
+        -webkit-text-fill-color: $accept;
+    }
     
     .menu-container, .order, .delivery{
         padding-bottom: 140px;
@@ -387,3 +388,10 @@
     }
   }
 
+.order-item span{color: $accept}
+.order-total >div >div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span{color: $accept; font-size: 20px;}
+}
