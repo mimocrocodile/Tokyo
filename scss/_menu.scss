@@ -205,12 +205,12 @@
         grid-template-columns: 1fr 1fr;
         margin-top: 60px;
     }
-    .info-container .order,   .info-container .delivery{
-        background-color: white;
-        border: 1px solid $gray;
-        border-radius: 24px;
-        padding: 60px;
-    }
+    // .info-container .order,   .info-container .delivery{
+    //     background-color: white;
+    //     border: 1px solid $gray;
+    //     border-radius: 24px;
+    //     padding: 60px;
+    // }
   
     .info-container .order-total{
         position: static;

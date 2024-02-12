@@ -36,7 +36,10 @@
         }
     }
 }
-
+@media (min-width: 1024px) {
+    // .logo{display: block;}
+    // .logo-mob{display: none;}
+}
 @media (max-width: 1023px) {
     .header{
         padding: 15px;
@@ -60,4 +63,6 @@
             }
         }
     }
+    // .logo{display: none;}
+    // .logo-mob{display: block;}
 }

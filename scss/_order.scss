@@ -1,7 +1,6 @@
 .order{
-    display: none;
     position: relative;
-    height: 100%;
+    // height: 100%;
     &-title{
         font-size: $font-big;
         line-height: $line-big;
@@ -29,7 +28,7 @@
         font-size: 18px;
         line-height: 22px;
         p{
-            background-color: $bg-color;
+            // background-color: $bg-color;
             &:first-child{
                 padding-right: 8px;
             }
@@ -82,4 +81,220 @@
     .order-total{
         margin-bottom: 15px;
     }
+}
+
+
+.orderpage{
+    max-width: 645px;
+    grid-template-columns: 1fr;
+}
+.orderpage .order-total{max-width: none;}
+.orderpage .order-total>div{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    >p{
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+
+    }
+}
+.order-item p:nth-child(2), .order-item span{
+    font-weight: 700;
+}
+.orderpage-btns{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    button, a{width: 100%; max-width: none;}
+}
+.orderpage-prevbtn{
+    border: 1px solid #FE0000;
+    background-color: white;
+    color: $accept;
+    padding: 16px 32px;
+    &:hover{
+        background-color: #FE0000;
+        color: white;
+    }
+}
+.orderpage-nextbtn{
+    background-color: #FE0000;
+    color: white;
+}
+
+.orderpage .order-total span{line-height: normal;}
+
+
+.progressbar{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    margin-top: 8px;
+    >div{
+        width: 100%;
+    }
+    &-line{
+        border-radius: 123px;
+        height: 4px;
+        width: 100%;
+        background-color: #DEDEDE;
+    }
+    &-line-red{
+        background-color: $yellow;
+    }
+    &-text{
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        color: $gray;
+        text-align: center;
+    }
+    &-text-active{
+        color: $dark-text;
+    }
+}
+.order, .delivery, .payment{
+    display: none;
+}
+
+.orderpage .delivery-form{
+    margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+    .orderpage.info-container{
+        padding-top: 60px;
+        margin-top: 0;
+        
+    }
+    .orderpage-window{
+        background-color: white;
+        border: 1px solid #858585;
+        border-radius: 24px;
+        padding: 60px;
+    }
+    .orderpage-accept{display: none;}
+ 
+}
+@media (max-width: 1023px) {
+    .orderpage.info-container{
+        display: block;
+    }
+    .order .order-total{
+        margin-top: 30px;
+    }
+    .orderpage .order-total > div{
+        display: block;
+        text-align: end;
+    }
+    .orderpage-window .orderpage-btns{
+        display: none;
+    }
+    .orderpage-accept{
+        position: fixed;
+        bottom: 0;
+        background-color: $accept;
+        padding: 15px;
+        border-top-right-radius: 32px;
+        border-top-left-radius: 32px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .orderpage-accept .orderpage-btns{
+        margin-top: 0;
+    }
+    .payment{
+        padding: 30px 15px 90px;
+    }
+   
+
+}
+
+.payment-info, .payment-btns{
+    display: flex;
+    flex-direction: column;
+}
+.payment-info{
+    margin-top: 30px;
+    gap: 30px;
+}
+.payment-btns{
+    gap: 20px;
+}
+
+.payment-card{
+    background-color: $accept;
+    border-radius: 123px;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    img{
+        margin-left: 10px;
+    }
+}
+.payment-kaspi{
+    background-color: #F14635;
+}
+
+.whatsapp{
+    padding: 12px;
+    background: #2DCB6C ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 123px;
+    position: fixed;
+    z-index: 5;
+    img{
+        max-width: 32px;
+        object-fit: cover;
+    }
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+@media (min-width: 1024px) {
+    .whatsapp{
+        bottom: 60px;
+        right: 60px;
+    }
+}
+
+@media (max-width: 1023px){
+    
+    .whatsapp{
+        bottom: 140px;
+        right: 15px;
+    }
+
+    .orderpage + .whatsapp{
+        bottom: 100px;
+    }
+}
+
+.order-back{display: none;}
+
+.isActive{
+    display: block;
+}
+
+.isDeactive{
+    display: none;
 }
