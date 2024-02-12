@@ -212,7 +212,9 @@
    
 
 }
-
+.orderpage.info-container .order-item p{
+    color: $accept !important;
+}
 .payment-info, .payment-btns{
     display: flex;
     flex-direction: column;

@@ -1027,6 +1027,10 @@ input:active {
     padding: 30px 15px 90px;
   }
 }
+.orderpage.info-container .order-item p {
+  color: #272733 !important;
+}
+
 .payment-info, .payment-btns {
   display: flex;
   flex-direction: column;
