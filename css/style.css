@@ -766,9 +766,6 @@ input:active {
 .delivery {
   display: none;
 }
-.delivery > p {
-  margin-bottom: 30px;
-}
 .delivery-form {
   display: grid;
   gap: 15px;
