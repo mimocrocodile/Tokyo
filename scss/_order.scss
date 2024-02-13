@@ -245,20 +245,7 @@
     background-color: #F14635;
 }
 
-.whatsapp{
-    padding: 12px;
-    background: #2DCB6C ;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 123px;
-    position: fixed;
-    z-index: 5;
-    img{
-        max-width: 32px;
-        object-fit: cover;
-    }
-}
+
 
 .pulse {
     animation: pulse-animation 2s infinite;
@@ -274,20 +261,15 @@
   }
 @media (min-width: 1024px) {
     .whatsapp{
-        bottom: 60px;
-        right: 60px;
     }
 }
 
 @media (max-width: 1023px){
     
     .whatsapp{
-        bottom: 140px;
-        right: 15px;
     }
 
     .orderpage + .whatsapp{
-        bottom: 100px;
     }
 }
 
