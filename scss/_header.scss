@@ -57,7 +57,7 @@
 }
 @media (min-width: 1024px) {
     // .logo{display: block;}
-    .logo-mob{max-width: 120px;}
+    .logo-mob{max-width: 240px;}
     .whatsapp{
         
         max-width: 48px;
@@ -97,4 +97,13 @@
     }
     // .logo{display: none;}
     // .logo-mob{display: block;}
+}
+
+@media (min-width: 1024px) {
+    .logo-mob{display: none;}
+}
+
+@media (max-width: 1023px) {
+    .logo-desc{display: none;}
+    .logo-mob{max-width: 120px;}
 }
